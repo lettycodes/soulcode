@@ -1,0 +1,68 @@
+/* Mobile (0 - 480px) */
+@media (min-width: 0) and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+  }
+
+  li a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .images {
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+    /* width: auto; */
+  }
+}
+
+/* Tablet (481 - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .images {
+    flex-direction: column;
+  }
+}
+
+/* Laptop (769 - 1279px) */
+@media (min-width: 769px) and (max-width: 1279px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Desktop (1280px - ...) */
+@media (min-width: 1280px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

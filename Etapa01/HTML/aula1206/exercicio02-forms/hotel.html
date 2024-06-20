@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reserva Hotel Sunset</title>
+  </head>
+  <body>
+    <h1>Faça sua reserva no Hotel Sunset</h1>
+
+    <div>
+      <label for="name">Nome:</label> <br />
+      <input type="text" name="nome" id="cNome" placeholder="Nome" required />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="email">E-mail</label><br />
+      <input
+        type="email"
+        name="email"
+        id="cEmail"
+        placeholder="E-mail"
+        required
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="checkin">Data de checkin:</label><br />
+      <input
+        type="date"
+        name="checkin"
+        id="cCheckin"
+        min="2024-06-12"
+        required
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="checkout">Data de checkout:</label><br />
+      <input
+        type="date"
+        name="checkout"
+        id="cCheckout"
+        min="2024-06-12"
+        max="2024-12-31"
+        required
+      />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="quarto" id="cQuarto">Tipo de quarto:</label><br />
+      <select name="quarto" id="cQuarto" required>
+        <option value="solteiro" id="cQuarto">Solteiro</option>
+        <option value="casal" id="cQuarto">Casal</option>
+        <option value="triplo" id="cQuarto">Triplo</option>
+      </select>
+    </div>
+
+    <div>
+      <p>Comentários adicionais:</p>
+      <textarea
+        name="comentarios"
+        id="cComentarios"
+        cols="25"
+        rows="5"
+      ></textarea>
+    </div>
+
+    <br />
+
+    <div>
+      <button type="submit">Enviar reserva</button>
+    </div>
+  </body>
+</html>

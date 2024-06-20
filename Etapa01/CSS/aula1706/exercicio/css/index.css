@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(70deg, #a8edea, #fed6e3);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+#titulo-principal {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 2rem;
+  color: #333;
+  letter-spacing: 10px;
+}
+
+.texto-introducao {
+  padding-left: 4rem;
+  margin: 10px auto;
+  font-size: 1rem;
+  color: #333;
+}
+
+.texto-introducao2 {
+  padding-left: 4rem;
+  margin: 10px auto;
+  font-size: 1rem;
+  color: #333;
+  font-size: 18px;
+}
+
+.caixa {
+  width: 50rem;
+  margin: 16px auto;
+  padding: 16px;
+  /* border-radius: 8px;
+  background: linear-gradient(65deg, #fbc2eb 0%, #a6c1ee 100%); */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.caixa p {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+}
+
+figure {
+  margin: 30px;
+  padding-left: 5rem;
+}
+
+img {
+  box-shadow: 5px 5px 5px 0px rgb(173, 173, 173);
+}
+
+.secao-botao {
+  text-align: center;
+  margin: 30px auto;
+}

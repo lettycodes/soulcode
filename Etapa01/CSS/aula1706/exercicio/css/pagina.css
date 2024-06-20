@@ -1,0 +1,97 @@
+.introducao {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 2rem;
+  background: linear-gradient(#7028e4, #e5b2ca);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secao-botao {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.botao1 {
+  height: 50px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botao2 {
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    #b993d6 0%,
+    #8ca6db 51%,
+    #b993d6 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botao3 {
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-image: linear-gradient(
+    to right,
+    #1d2b64 0%,
+    #f8cdda 51%,
+    #1d2b64 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.texto {
+  text-align: center;
+  margin: 30px auto;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.secao2 {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

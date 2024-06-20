@@ -1,0 +1,43 @@
+/* Box Model
+> oadding (espaçamento interno)
+> margin (espaçamento externo)
+> border (borda ao redor do elemento)
+*/
+
+.box1 {
+  background-color: chocolate;
+  padding: 20px;
+  margin: 10px;
+}
+
+.box2 {
+  background-color: pink;
+  /* TOP RIGHT BOTTOM LEFT */
+  padding: 10px 15px 20px 10px;
+  /* margin: 30px 10px 10px 10px; */
+  /* VERTICAL HORIZONTAL */
+  margin: 20px 10px;
+}
+
+.box3 {
+  background-color: darkorchid;
+  border: 5px solid red;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.box4 {
+  background-color: seagreen;
+  margin: 10px;
+  padding: 30px;
+  border: 5px solid yellow;
+  width: 200px;
+  height: 400px;
+  /* box-sizing: border-box; */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de usuário</title>
+  </head>
+  <body>
+    <h2>Cadastro</h2>
+    <!-- 
+    <form> -> Container do formulário
+    <input>, <textarea>, <select> -> Campos do formulário
+    <label> -> Rótulo dos campos
+    -->
+    <form>
+      <!-- O atributo "for" vincula o campo e o rótulo -->
+      <!-- Placeholder é uma dica para o usuário -->
+      <div>
+        <label for="cNome">Nome:</label><br />
+        <input
+          type="text"
+          id="cNome"
+          name="nome"
+          placeholder="Seu nome aqui"
+          value="Maria"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="cEmail">E-mail:</label><br />
+        <input
+          type="email"
+          id="cEmail"
+          name="email"
+          placeholder="seunome@emil.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="cSenha">Senha:</label><br />
+        <input
+          type="password"
+          minlength="8"
+          id="cSenha"
+          name="senha"
+          placeholder="Sua senha aqui"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="cTelefone">Telefone:</label><br />
+        <input
+          type="tel"
+          id="cTelefone"
+          name="telefone"
+          placeholder="(00) 99999-9999"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="cLindekdin">Link do LinkedIn</label><br />
+        <input
+          type="url"
+          id="cLinkedin"
+          name="linkedin"
+          placeholder="https://linkedin.com/in/seu-nome"
+        />
+      </div>
+
+      <div>
+        <label for="cIdade">Idade:</label><br />
+        <input
+          type="number"
+          min="0"
+          max="130"
+          id="cIdade"
+          name="idade"
+          placeholder="Sua idade"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="cDataNasc">Data de Nascimento:</label><br />
+        <input
+          type="date"
+          min="2000-01-01"
+          max="2024-06-12"
+          id="cDataNasc"
+          name="dataNasc"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="">Sua foto:</label><br />
+        <input type="file" name="foto" id="cFoto" accept=".jpg, .png" />
+      </div>
+
+      <div>
+        <p>Sua linguagem favorita:</p>
+        <input type="radio" name="linguagem" id="html" />
+        <label for="html">HTML</label>
+
+        <input type="radio" name="linguagem" id="css" />
+        <label for="css">CSS</label>
+
+        <input type="radio" name="linguagem" id="javascript" />
+        <label for="javascript">JAVASCRIPT</label>
+      </div>
+
+      <div>
+        <label>Fale um pouco sobre você</label><br />
+        <textarea
+          name="descricao"
+          id="cDescricao"
+          placeholder="Fale dos seus hobbies, etc"
+          required
+        ></textarea>
+      </div>
+
+      <div>
+        <label for="cEscolaridade">Escolaridade</label><br />
+        <select name="escolaridade" id="cEscolaridade" required>
+          <option disabled selected value="">Selecione uma opção</option>
+          <option value="fundamental">Ensino Fundamental Completo</option>
+          <option value="medio">Ensino Médio Completo</option>
+          <option value="superior">Ensino Superior Completo</option>
+          <option value="pos">Pós-graduação Completa</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        <!-- indica para o form que este botão tem outra funcionalidade -->
+        <button type="button">Ajuda?</button>
+      </div>
+    </form>
+  </body>
+</html>
