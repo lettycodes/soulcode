@@ -2,11 +2,11 @@
 function alunosQueFaltaram(todosAlunos, listaPresenca) {
   let faltaram = [];
 
-  todosAlunos.forEach((aluno) => {
-    if (!listaPresenca.includes(aluno)) {
-      faltaram.push(aluno);
+  for (let i = 0; i < todosAlunos.length; i++) {
+    if (!listaPresenca.includes(todosAlunos[i])) {
+      faltaram.push(todosAlunos[i]);
     }
-  });
+  }
 
   return faltaram;
 }
@@ -16,22 +16,20 @@ let presentes = ["Ana", "Celso", "Eduardo"];
 
 let faltaram = alunosQueFaltaram(alunos, presentes);
 console.log("Alunos que faltaram:");
-faltaram.forEach((aluno) => {
-  console.log(aluno);
-});
+console.log(faltaram);
 
-/* 2. Crie uma função que recebe um array de números e retorna um array com todos os valores elevados ao quadrado */
-function elevarAoQuadrado(numeros) {
-  let quadrados = [];
-  numeros.forEach((numero) => {
-    quadrados.push(numero * numero);
-  });
-  return quadrados;
+/* 2. Crie uma função que recebe um array de números e retorna um array com todos os valores elevados ao quadrado. */
+function elevarAoQuadrado(arrayNum) {
+  let arrayQuadrado = [];
+  for (let numero of arrayNum) {
+    arrayQuadrado.push(numero * numero);
+  }
+  return arrayQuadrado;
 }
 
 let numeros = [1, 2, 3, 4, 5];
-let resultado = elevarAoQuadrado(numeros);
-console.log(resultado);
+let numerosQuadrados = elevarAoQuadrado(numeros);
+console.log(numerosQuadrados);
 
 /* 3. Crie uma função que recebe um array de nomes de arquivos, e recebe também uma extensão, a função deve retornar apenas os nomes de arquivo que forem dessa extensão. */
 function filtrarPorExtensao(arquivos, extensao) {
