@@ -21,6 +21,7 @@ console.log(faltaram);
 /* 2. Crie uma função que recebe um array de números e retorna um array com todos os valores elevados ao quadrado. */
 function elevarAoQuadrado(arrayNum) {
   let arrayQuadrado = [];
+
   for (let numero of arrayNum) {
     arrayQuadrado.push(numero * numero);
   }
@@ -122,7 +123,7 @@ function extrairDigitosVerificadores(cpf) {
   return digitosVerificadores;
 }
 
-let cpf = "123.456.789-00";
+let cpf = "056.985.990-23";
 let digitos = extrairDigitosVerificadores(cpf);
 console.log("Dígitos verificadores: " + digitos);
 
@@ -135,23 +136,21 @@ function inverterString(str) {
   return invertida.join("");
 }
 
-let texto = "HELLO WORLD!";
-let textoInvertido = inverterString(texto);
-console.log("Texto invertido: " + textoInvertido);
+let palavra = "HELLO";
+let palavraInvertida = inverterString(palavra);
+console.log("Palavra invertida: " + palavraInvertida);
 
 /* 9. Escreva uma função que receba uma palavra e um número. Retorne a palavra repetida a quantidade de vezes indicada pelo segundo parâmetro. Exemplo: repetir("batata", 3) -> "batatabatatabatata". OBS: Utilize um loop para resolver. */
 function repetir(palavra, vezes) {
   let resultado = "";
+
   for (let i = 0; i < vezes; i++) {
     resultado += palavra;
   }
   return resultado;
 }
 
-let palavra = "batata";
-let vezes = 3;
-let palavraRepetida = repetir(palavra, vezes);
-console.log(palavraRepetida);
+console.log(repetir("batata", 3));
 
 /* 10. Escreva uma função que receba duas strings e retorne true se elas forem iguais ou false caso contrário. */
 function stringsIguais(str1, str2) {
@@ -166,19 +165,13 @@ console.log(stringsIguais("batata", "batata"));
 console.log(stringsIguais("maçã", "laranja"));
 
 /* 11. Crie uma função que recebe um dia, mês e ano dentro de um array. Retorna a data utilizando o separador que também será definido via parâmetros da função (-, / ou .). Ex: formatarData(array, '.') -> '20.06.2000' */
-function formatarData(arrayData, separador) {
-  let dia = arrayData[0];
-  let mes = arrayData[1];
-  let ano = arrayData[2];
+let arrayData = ["20", "06", "2000"];
 
-  return `${dia}${separador}${mes}${separador}${ano}`;
+function formatarData(arr, separador) {
+  return arr.join(separador);
 }
 
-let data1 = [1, 1, 2000];
-console.log(formatarData(data1, "."));
-
-let data2 = [25, 12, 1990];
-console.log(formatarData(data2, "-"));
+console.log(formatarData(arrayData, "."));
 
 /* 12. Crie uma função que recebe um array, um valor de busca e um valor padrão. Caso o elemento exista no array retorne o elemento, caso contrário retorne o valor padrão definido via parâmetro. Ex: busca(array, 'batata', 'não tem batata') -> 'não tem batata' */
 function busca(array, valorBusca, valorPadrao) {
