@@ -13,7 +13,7 @@ function filtrarNumerosPares(numeros) {
 let numeros = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 console.log(filtrarNumerosPares(numeros));
 
-// O array numerosPares é inicializado vazio para armazenar os números pares, o for of percorre cada número do array, o if verifica se o número que está sendo percorrido no momento é divisível por 2, ou seja, se é par, se o número for par, ele adiciona o número no array numerosPares, o return vai retornar esses números pares, que logo abaixo estão dentro do array e, no console, será exibido os números pares: [ 2, 4, 6, 8, 10 ]
+// O array numerosPares é inicializado vazio para armazenar os números pares, o for percorre cada número do array, o if verifica se o número que está sendo percorrido no momento é divisível por 2, ou seja, se é par, se o número for par, ele adiciona o número no array numerosPares, o return vai retornar esses números pares, que logo abaixo estão dentro do array e, no console, será exibido os números pares: [ 2, 4, 6, 8, 10 ]
 
 /* 2. Escreva uma função que receba um array de números e retorne a soma de todos os números. */
 function somaNumeros() {
@@ -79,5 +79,3 @@ function calcularMedia() {
 calcularMedia();
 
 // Um array com números é inicializado, a variável soma é inicializada com 0, o for percorre o array somando os valores, calcula a média dividindo a soma pelo número de elementos e imprime a média no console: 8
-
-/* 7. Escreva uma função que conte a frequência de cada caractere em uma string. Dica: use objetos para guardar as contagens de cada caractere.*/
