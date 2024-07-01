@@ -1,0 +1,62 @@
+html {
+  height: 100%;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-descricao {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: rgba(72, 240, 46, 0.4) 0px 5px, rgba(72, 240, 82, 0.3) 0px 10px,
+    rgba(46, 170, 63, 0.2) 0px 15px, rgba(46, 170, 52, 0.1) 0px 20px,
+    rgba(58, 170, 46, 0.05) 0px 25px;
+  position: relative;
+  gap: 10px;
+  color: white;
+}
+
+.titulo-01, .titulo-02
+{
+  text-align: center;
+  color: #05C076;
+  padding: 10px;
+}
+.toogle{
+  padding-left: 50px;
+}
+
+footer {
+  position: absolute;
+}
+
+@media (max-width: 1023px) {
+  .container-descricao {
+    width: 400px;
+    margin-top: 80px;
+  }
+
+  h1,h2{
+    
+    font-size: 24px;
+  }
+  p,ul{
+    font-size: 12px;
+  }
+  .toogle{
+    padding: 20px;
+  }
+
+}
