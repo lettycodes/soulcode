@@ -1,0 +1,19 @@
+header {
+  height: 3.75rem;
+  width: 100%;
+  background-color: rgb(239, 239, 255);
+  border-bottom: 1px solid rgb(192, 191, 191);
+  display: flex;
+  align-items: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-bottom: 1.87rem;
+  justify-content: space-between;
+}
+
+.titulo-header {
+  color: rgb(213, 105, 255);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}

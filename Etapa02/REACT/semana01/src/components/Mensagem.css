@@ -1,0 +1,25 @@
+.mensagem-corpo {
+  background-color: whitesmoke;
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  width: 300px;
+  margin: 8px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mensagem-titulo {
+  color: darkslateblue;
+  text-align: center;
+}
+
+.paragrafo {
+  font-style: italic;
+  text-align: justify;
+}
+
+img {
+  border-radius: 8px;
+}
