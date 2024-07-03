@@ -1,0 +1,22 @@
+.postagem {
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 200px;
+  margin: 8px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+  gap: 2px;
+}
+
+.postagem p {
+  text-align: center;
+}
+
+img {
+  border-radius: 8px;
+  width: 95%;
+}

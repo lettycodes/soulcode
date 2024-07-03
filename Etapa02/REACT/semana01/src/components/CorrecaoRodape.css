@@ -1,0 +1,9 @@
+footer {
+  font-style: italic;
+  background-color: rgb(224, 224, 224);
+  text-align: center;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
