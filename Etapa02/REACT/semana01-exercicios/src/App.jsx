@@ -5,11 +5,13 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <main>
-      <Header />
-      <Blog />
+    <>
+      <main>
+        <Header />
+        <Blog />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
 
