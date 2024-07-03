@@ -3,8 +3,10 @@
 // Declarativa
 // Açúcar sintático => é uma sintaxe dentro da linguagem de programação que tem por finalidade tornar suas construções mais fáceis de serem lidas e expressas
 
-import Titulo from "./components/Titulo";
-import Mensagem from "./components/Mensagem";
+import Blog from "./components/CorrecaoBlog";
+import Navbar from "./components/Navbar";
+import Rodape from "./components/CorrecaoRodape";
+// import Mensagem from "./components/Mensagem";
 
 // Componente principal da aplicação
 function App() {
@@ -18,15 +20,18 @@ function App() {
     //   <button>Apertar</button>
     //   <p>Soma: {20 + 5}</p>
     // </section>
-
-    <main>
-      <Titulo />
-      <Mensagem />
-      <Mensagem />
-      <Mensagem />
-      <Mensagem />
-      <Mensagem />
-    </main>
+    <>
+      {/* <Mensagem
+        textoTitulo="As batatas quando nascem se esparramam pelo chão"
+        nomeAutor="Criado por: J. Almir"
+        paragrafo="Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, vel."
+        linkImagem="https://picsum.photos/200"
+      /> */}
+      <Navbar logado={true} nomeUsuario="Batata" />
+      <Navbar logado={false} />
+      <Blog />
+      <Rodape />
+    </>
   );
 }
 

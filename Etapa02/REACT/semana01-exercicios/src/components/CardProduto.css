@@ -1,0 +1,33 @@
+.card-produto {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 1rem auto;
+  width: 18.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nome-produto {
+  font-size: 0.8rem;
+}
+
+.preco {
+  margin: 16px 0;
+}
+
+.preco-original {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.preco-desconto {
+  font-size: 1.5rem;
+}
+
+.desconto {
+  color: #28a745;
+  margin-left: 0.5rem;
+}

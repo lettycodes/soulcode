@@ -1,0 +1,27 @@
+.card-aluno {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 1rem auto;
+  width: 18.75rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nome-aluno {
+  font-weight: 500;
+}
+
+.aprovado {
+  color: #008820;
+  font-weight: 700;
+}
+
+.reprovado {
+  color: #d10015;
+  font-weight: 700;
+}
