@@ -17,9 +17,17 @@ function Navbar() {
           >
             Entrar
           </button>
-          <a href="#">Jogos Populares</a>
-          <a href="#">Tutoriais</a>
-          <a href="#">Todas as análises</a>
+          <li>
+            <ul className="nav-list">
+              <a href="#">Jogos Populares</a>
+            </ul>
+            <ul>
+              <a href="#">Tutoriais</a>
+            </ul>
+            <ul>
+              <a href="#">Todas as análises</a>
+            </ul>
+          </li>
         </section>
       </nav>
     </>
