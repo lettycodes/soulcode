@@ -4,7 +4,7 @@
 // Açúcar sintático => é uma sintaxe dentro da linguagem de programação que tem por finalidade tornar suas construções mais fáceis de serem lidas e expressas
 
 import Banner from "./components/Banner";
-import Listagem from "./components/Listagem";
+// import Listagem from "./components/Listagem";
 
 // import Blog from "./components/CorrecaoBlog";
 // import Navbar from "./components/Navbar";
