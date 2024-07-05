@@ -2,7 +2,7 @@
 
 ## Mundo Gamer
 <p align="center">
-  <img src="/Etapa02/REACT/semana01-projeto/src/assets/mundogamer-preview.png" alt="Primeira Imagem" width="600"/>
+  <img src="/Etapa02/REACT/semana01-projeto/src/assets/mundogamer-preview.png" alt="Página Mundo Gamer" />
 </p>
 
 ### Objetivo:
