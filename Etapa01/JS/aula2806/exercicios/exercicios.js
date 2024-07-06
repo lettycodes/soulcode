@@ -31,6 +31,21 @@ somaNumeros();
 
 // O array foi definido com alguns números, a variável soma foi inicializada com 0, o laço for vai percorrer todos os elementos do array e retorna os valores somados, que será exibido no console: 94
 
+// Corrigindo: o array deve ser passado via parâmetros, e não ser definido dentro do array como uma variável local e adicionar return
+function somaNumeros(num) {
+  let soma = 0;
+
+  for (let i = 0; i < num.length; i++) {
+    soma += num[i];
+  }
+
+  return soma;
+}
+
+const num = [13, 73, 3, 5];
+const resultado = somaNumeros(num);
+console.log("A soma dos números é:", resultado);
+
 /* 3. Escreva uma função que verifique se uma string é um palíndromo (ou seja, a string é igual quando lida de trás para frente). ARARA -> Palíndromo. */
 function palindromo(palavra) {
   let palavraInvertida = palavra.split("").reverse().join("");
@@ -63,6 +78,23 @@ menorNumero();
 
 // O array foi definido com alguns números, o primeiro elemento do array foi definido como o menor inicialmente: [0], o laço for percorre os elementos do array a partir do segundo elemento, se o elemento atual for menor que o menor encontrado até agora, o valor menor é atualizado e imprime no console o menor valor encontrado: -77
 
+// Corrigindo: o array deve ser passado via parâmetros, e não ser definido dentro do array como uma variável local e adicionar return
+function menorNumero(numeros2) {
+  let menor = numeros2[0];
+
+  for (let i = 1; i < numeros2.length; i++) {
+    if (numeros2[i] < menor) {
+      menor = numeros2[i];
+    }
+  }
+
+  return menor;
+}
+
+const numeros2 = [8, 19, 5, 24, -77, -15, 88, 10];
+const resultado2 = menorNumero(numeros2);
+console.log("O menor número é:", resultado2);
+
 /* 6. Escreva uma função que calcule a média dos números em um array. [7.0, 8.0, 9.0] -> (7.0 + 8.0 + 9.0) / 3. */
 function calcularMedia() {
   let numeros = [7.0, 8.0, 9.0];
@@ -79,3 +111,19 @@ function calcularMedia() {
 calcularMedia();
 
 // Um array com números é inicializado, a variável soma é inicializada com 0, o for percorre o array somando os valores, calcula a média dividindo a soma pelo número de elementos e imprime a média no console: 8
+
+// Corrigindo: o array deve ser passado via parâmetros, e não ser definido dentro do array como uma variável local e adicionar return
+function calcularMedia(numeros3) {
+  let soma = 0;
+
+  for (let i = 0; i < numeros3.length; i++) {
+    soma += numeros3[i];
+  }
+
+  let media = soma / numeros3.length;
+  return media;
+}
+
+const numeros3 = [7.0, 8.0, 9.0];
+const resultado3 = calcularMedia(numeros3);
+console.log("A média dos números é:", resultado3);
