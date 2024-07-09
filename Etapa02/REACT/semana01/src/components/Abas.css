@@ -1,0 +1,16 @@
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 12px;
+}
+
+.botoes button {
+  padding: 4px 18px;
+}
+
+.ativo {
+  font-weight: bold;
+  background-color: darkorange;
+  color: white;
+}

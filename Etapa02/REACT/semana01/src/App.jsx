@@ -3,15 +3,19 @@
 // Declarativa
 // Açúcar sintático => é uma sintaxe dentro da linguagem de programação que tem por finalidade tornar suas construções mais fáceis de serem lidas e expressas
 
-import Banner from "./components/Banner";
-// import Listagem from "./components/Listagem";
-
 // import Blog from "./components/CorrecaoBlog";
 // import Navbar from "./components/Navbar";
 // import Rodape from "./components/CorrecaoRodape";
 // import Mensagem from "./components/Mensagem";
 // import CardAluno from "./components/CorrecaoCardAluno";
 // import CardProduto from "./components/CorrecaoCardProduto";
+// import Listagem from "./components/Listagem";
+// import Banner from "./components/Banner";
+// import Eventos from "./components/Eventos";
+// import Contador from "./components/Contador";
+// import Abas from "./components/Abas";
+// import Carrossel from "./components/Carrossel";
+import CalculadoraIMC from "./components/CalculadoraIMC";
 
 // Componente principal da aplicação
 function App() {
@@ -43,7 +47,15 @@ function App() {
       <CardProduto nome="Fone Wireless" precoUnitario={100} desconto={15} />
       <CardProduto nome="Carro" precoUnitario={90000} desconto={0} /> */}
       {/* <Listagem /> */}
-      <Banner />
+      {/* <Banner /> */}
+      {/* <Eventos /> */}
+      {/* <Contador valorInicial={20} />
+      <Contador valorInicial={0} />
+      <Contador valorInicial={1000} />
+      <Contador /> */}
+      {/* <Abas /> */}
+      {/* <Carrossel /> */}
+      <CalculadoraIMC />
     </>
   );
 }
