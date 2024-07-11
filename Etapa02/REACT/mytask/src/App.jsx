@@ -7,13 +7,14 @@ import NotFound from "./pages/NotFound";
 import Menu from "./components/Menu";
 import Rodape from "./components/Rodape";
 import PoliticasDePrivacidade from "./pages/PoliticasDePrivacidade";
+import NovaTarefa from "./pages/NovaTarefa";
 
 // BrowseRouter: componente essencial para conduzir o roteamento no navegador
 // Route: indicamos a rota (path) e o elemento que será exibido na tela
 
 function App() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <BrowserRouter>
         <Menu />
         <Routes>
@@ -21,12 +22,13 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/ajuda" element={<Ajuda />} />
-          <Route path="/not-found" element={<NotFound />} />
           <Route path="/politicas" element={<PoliticasDePrivacidade />} />
+          <Route path="novatarefa" element={<NovaTarefa />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Rodape />
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
