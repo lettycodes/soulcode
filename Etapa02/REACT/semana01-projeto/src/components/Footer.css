@@ -1,10 +1,13 @@
-footer {
-  height: 3.75rem;
+/* footer {
+  height: 3rem;
   background-color: #3a1078;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  margin-top: 0.8rem;
+} */
+
+footer {
+  background-color: #3a1078;
 }

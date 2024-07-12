@@ -1,4 +1,4 @@
-nav {
+/* nav {
   height: 3.75rem;
   background-color: #3a1078;
   color: #fff;
@@ -48,4 +48,8 @@ li {
 
 .section-links a:hover {
   color: #985ad7;
+} */
+
+header {
+  background-color: #3a1078;
 }
