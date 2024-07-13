@@ -24,9 +24,14 @@ function Contato() {
             type="text"
             id="nome"
             className="form-control"
-            {...register("nome", { required: true, maxLength: 150 })}
+            {...register("nome", {
+              required: "O nome é obrigatório",
+              maxLength: 150,
+            })}
           />
-          {errors.nome && <small className="invalid">O nome é inválido!</small>}
+          {errors.feedback && (
+            <small className="invalid">{errors.nome.message}</small>
+          )}
         </div>
         <div>
           <label htmlFor="email">Email</label>
@@ -41,16 +46,15 @@ function Contato() {
           )}
         </div>
         <div>
-          <label htmlFor="feedback">Comentários</label>
-          <input
-            type="text"
+          <label htmlFor="feedback">Feedback</label>
+          <textarea
             id="feedback"
             className="form-control"
             {...register("feedback", {
-              required: "O comentário é obrigatório",
-              minLength: { value: 6, message: "Mínimo de 6 caracteres." },
+              required: "O feedback é obrigatório",
+              minLength: { value: 5, message: "Mínimo de 5 caracteres." },
             })}
-          />
+          ></textarea>
           {errors.feedback && (
             <small className="invalid">{errors.feedback.message}</small>
           )}

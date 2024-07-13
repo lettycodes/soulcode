@@ -26,7 +26,7 @@ function Cadastro() {
             className="form-control"
             {...register("nome", { required: true, maxLength: 150 })}
           />
-          {errors.nome && <small className="invalid">O nome é inválido!</small>}
+          {errors.nome && <small className="invalid">O nome é inválido</small>}
         </div>
         <div>
           <label htmlFor="email">Email</label>
@@ -37,7 +37,7 @@ function Cadastro() {
             {...register("email", { required: true })}
           />
           {errors.email && (
-            <small className="invalid">O email é inválido!</small>
+            <small className="invalid">O email é inválido</small>
           )}
         </div>
         <div>
@@ -49,7 +49,7 @@ function Cadastro() {
             {...register("senha", { required: true, minLength: 6 })}
           />
           {errors.senha && (
-            <small className="invalid">A senha é inválida!</small>
+            <small className="invalid">A senha é inválida</small>
           )}
         </div>
         <div>
@@ -61,7 +61,7 @@ function Cadastro() {
             {...register("dataNasc", { required: true })}
           />
           {errors.dataNasc && (
-            <small className="invalid">Data de nascimento é obrigatória!</small>
+            <small className="invalid">Data de nascimento é obrigatória</small>
           )}
         </div>
         <Button variant="dark" className="mt-1 w-100" type="submit">
