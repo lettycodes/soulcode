@@ -7,9 +7,8 @@
 .card {
   flex: 0 0 25rem;
   margin: 0.625rem;
-  box-shadow: rgb(58, 16, 120) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: #3a1078 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 0.5rem;
-  background-color: rgba(246, 236, 255, 0.644);
 }
 .card img {
   max-width: 100%;
@@ -30,7 +29,7 @@
   text-align: justify;
 }
 
-button {
+.card-btn {
   background: #3a1078;
   border: 0;
   color: white;

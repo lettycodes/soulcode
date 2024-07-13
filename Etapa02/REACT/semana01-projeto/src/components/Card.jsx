@@ -11,10 +11,9 @@ function Card(props) {
         <section className="card-content">
           <p className="card-game-name">{props.jogo}</p>
           <p className="card-description">{props.descricao}</p>
-
-          <button type="button" className="card-btn">
-            Leia mais
-          </button>
+            <button type="button" className="card-btn">
+              Leia mais
+            </button>
         </section>
       </article>
     </>

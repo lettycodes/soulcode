@@ -1,10 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 body {
   background-color: #fff;
   font-family: monospace;
+}
+
+.form-section {
+  width: 320px;
+  margin: 16px auto;
+}
+
+.invalid {
+  color: red;
 }
