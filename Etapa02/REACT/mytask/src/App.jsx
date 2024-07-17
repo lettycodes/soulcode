@@ -14,6 +14,7 @@ import { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase/config";
+import { UsuarioContext } from "./contexts/UsuarioContext";
 
 // BrowseRouter: componente essencial para conduzir o roteamento no navegador
 // Route: indicamos a rota (path) e o elemento que será exibido na tela
@@ -32,24 +33,29 @@ function App() {
     });
   }, []);
 
+  // Usuario.Provider é o elemento que irá compartilhar um valor/dado
+  // para os componentes filhos da aplicação
+
   return (
     <div className="d-flex flex-column min-vh-100">
-      <BrowserRouter>
-        <Menu usuario={usuarioLogado} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/cadastro" element={<Cadastro />} />
-          <Route path="/ajuda" element={<Ajuda />} />
-          <Route path="/politicas" element={<PoliticasDePrivacidade />} />
-          <Route path="/tarefas" element={<Tarefas />} />
-          <Route path="/tarefas/adicionar" element={<NovaTarefa />} />
-          <Route path="/tarefas/editar/:id" element={<EditarTarefa />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Rodape />
-      </BrowserRouter>
-      <Toaster position="bottom-right" />
+      <UsuarioContext.Provider value={usuarioLogado}>
+        <BrowserRouter>
+          <Menu />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/ajuda" element={<Ajuda />} />
+            <Route path="/politicas" element={<PoliticasDePrivacidade />} />
+            <Route path="/tarefas" element={<Tarefas />} />
+            <Route path="/tarefas/adicionar" element={<NovaTarefa />} />
+            <Route path="/tarefas/editar/:id" element={<EditarTarefa />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Rodape />
+        </BrowserRouter>
+        <Toaster position="bottom-right" />
+      </UsuarioContext.Provider>
     </div>
   );
 }
