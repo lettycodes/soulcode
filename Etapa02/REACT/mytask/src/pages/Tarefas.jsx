@@ -1,17 +1,33 @@
 import { Badge, Button, Card, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { getTarefas } from "../firebase/tarefas";
+import { deleteTarefa, getTarefas } from "../firebase/tarefas";
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 function Tarefas() {
   const [tarefas, setTarefas] = useState(null);
+
+  const navigate = useNavigate();
 
   function carregarDados() {
     // O then devolve a lista de tarefas da coleção
     getTarefas().then((resultados) => {
       setTarefas(resultados);
     });
+  }
+
+  function deletarTarefa(id) {
+    // true -> apagar a tarefa, false -> não fazer nada
+    const deletar = confirm("Tem certeza?");
+    if (deletar) {
+      deleteTarefa(id).then(() => {
+        toast.success("Tarefa removida com sucesso");
+        // Trazer a lista de tarefas atualizada
+        carregarDados();
+      });
+    }
   }
 
   // Executar uma função quando o componente é renderizado a primeira vez
@@ -43,8 +59,20 @@ function Tarefas() {
                       )}
                       <Badge bg="dark">{tarefa.categoria}</Badge>
                     </div>
-                    <Button variant="dark">Editar</Button>
-                    <Button variant="danger">Excluir</Button>
+                    <Button
+                      variant="dark"
+                      onClick={() => {
+                        navigate(`/tarefas/editar/${tarefa.id}`);
+                      }}
+                    >
+                      Editar
+                    </Button>
+                    <Button
+                      variant="danger"
+                      onClick={() => deletarTarefa(tarefa.id)}
+                    >
+                      Excluir
+                    </Button>
                   </Card.Body>
                 </Card>
               );
