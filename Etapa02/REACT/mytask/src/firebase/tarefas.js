@@ -1,5 +1,4 @@
-// O propósito deste arquivo é ter todas as funções
-// necessárias para gerenciar tarefas (CRUD - Create, Read, Update, Delete):
+// O propósito deste arquivo é ter todas as funções necessárias para gerenciar tarefas (CRUD - Create, Read, Update, Delete):
 // - adicionar uma nova tarefa (Create)
 // - listar as tarefas (Read)
 // - atualizar uma tarefa (Update)
@@ -11,7 +10,9 @@ import {
   doc,
   getDoc,
   getDocs,
+  query,
   updateDoc,
+  where,
 } from "firebase/firestore";
 import { db } from "./config";
 
@@ -31,6 +32,20 @@ export async function getTarefas() {
   const tarefas = [];
 
   // Percorremos cada documento da coleção e inserimos no array de tarefas
+  snapshot.forEach((doc) => {
+    tarefas.push({ ...doc.data(), id: doc.id });
+  });
+
+  return tarefas;
+}
+
+export async function getTarefasUsuario(idUsuario) {
+  // Filtrar as tarefas da coleção de acordo com o id do usuário
+  const filtro = query(tarefasCol, where("idUsuario", "==", idUsuario));
+
+  const snapshot = await getDocs(filtro);
+  const tarefas = [];
+
   snapshot.forEach((doc) => {
     tarefas.push({ ...doc.data(), id: doc.id });
   });
